@@ -10,7 +10,7 @@ async def main():
 
 
     llm = AzureOpenAIChatCompletionClient(azure_deployment="aif-gpt-4.1",
-                                          model="gpt-4.1-2025-04-14",
+                                          model="gpt-4o",
                                           api_version="2024-06-01",
                                           azure_endpoint=os.getenv("AOAI_ENDPOINT"),
                                           api_key=os.getenv("AOAI_API_KEY"))
@@ -85,6 +85,7 @@ async def main():
     team = SelectorGroupChat(participants=[aga, agb, agc, agd],
                               model_client=llm,
                               selector_prompt=sp,
+                              allow_repeated_speaker=False,
                               termination_condition=tc)
     print(team._selector_prompt)
 
