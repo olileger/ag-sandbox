@@ -10,7 +10,7 @@ async def main():
 
 
     llm = AzureOpenAIChatCompletionClient(azure_deployment="aif-gpt-4.1",
-                                          model="gpt-4o",
+                                          model="gpt-4.1",
                                           api_version="2024-06-01",
                                           azure_endpoint=os.getenv("AOAI_ENDPOINT"),
                                           api_key=os.getenv("AOAI_API_KEY"))
