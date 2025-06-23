@@ -62,7 +62,7 @@ async def main():
         wrapped_agent=seo,
         filter=MessageFilterConfig(
             per_source=[
-                PerSourceFilter(source="Relecteur", position="last", count=1),
+                PerSourceFilter(source="Redacteur", position="last", count=1),
             ]
         ),
     )
