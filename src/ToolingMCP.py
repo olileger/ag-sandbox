@@ -40,7 +40,7 @@ async def main():
                                    Tu t'appuis sur tes outils pour répondre aux questions de l'utilisateur.
                                    """)
 
-    await Console(agent.run_stream(task="Génère une phrase de 5 mots puis calcul son hash SHA3-256."))
+    await Console(agent.run_stream(task="Génère une phrase de 5 mots puis calcul son hash SHA3."))
 
 
 
